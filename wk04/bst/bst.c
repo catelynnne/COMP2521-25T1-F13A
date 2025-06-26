@@ -1,7 +1,11 @@
 
 #include <stdlib.h>
 
-#include "bst.h"
+struct node {
+    int value;
+    struct node *left;
+    struct node *right;
+};
 
 /**
  * Frees all memory allocated to the given tree.
