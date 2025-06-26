@@ -14,6 +14,11 @@ struct node {
 void bstFree(struct node *t);
 
 /**
+ * Counts the total number of nodes in a given tree.
+ */
+int bstNumNodes(struct node *t);
+
+/**
  * Returns the number of odd values in the given tree.
  */
 int bstCountOdds(struct node *t);

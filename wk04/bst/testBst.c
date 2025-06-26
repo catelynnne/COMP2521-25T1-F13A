@@ -13,6 +13,7 @@
 static void initTrees(void);
 static void freeTrees(void);
 
+static void testBstNumNodes(void);
 static void testBstCountOdds(void);
 static void testBstCountInternal(void);
 static void testBstNodeLevel(void);
@@ -26,6 +27,7 @@ static struct node *t01, *t02, *t03, *t04, *t05, *t06, *t07, *t08, *t09, *t10, *
 int main(void) {
     initTrees();
 
+    testBstNumNodes();
     testBstCountOdds();
     testBstCountInternal();
     testBstNodeLevel();
@@ -215,6 +217,15 @@ static void freeTrees(void) {
 }
 
 // ----------------------------------------
+
+static void testBstNumNodes(void) {
+    printf("Testing bstNumNodes...\n");
+
+    assert(bstNumNodes(t01) == 0);
+    assert(bstNumNodes(t10) == 7);
+
+    printf("bstNumNodes tests passed!\n");
+}
 
 static void testBstCountOdds(void) {
     printf("Testing bstCountOdds...\n");
