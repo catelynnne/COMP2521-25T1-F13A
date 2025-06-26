@@ -1,2 +1,2 @@
-# tut-starter-code
-Starter code for COMP2521 tutorials
+# COMP2521 Friday 3pm Tutorial Code
+Code that we have written together in class
