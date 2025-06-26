@@ -15,6 +15,13 @@ void bstFree(struct node *t) {
 }
 
 /**
+ * Counts the total number of nodes in a given tree.
+ */
+int bstNumNodes(struct node *t) {
+    return 0;
+} 
+
+/**
  * Returns the number of odd values in the given tree.
  */
 int bstCountOdds(struct node *t) {
@@ -27,6 +34,13 @@ int bstCountOdds(struct node *t) {
  * leaf.
  */
 int bstCountInternal(struct node *t) {
+    return 0;
+}
+
+/**
+ * Returns the height of the tree.
+ */
+int bstHeight(struct node *t) {
     return 0;
 }
 
