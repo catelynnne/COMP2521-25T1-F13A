@@ -1,2 +1,2 @@
 # COMP2521 Friday 3pm Tutorial Code
-Code that we have written together in class
+You can find code that we have written together in class in this repo :)
