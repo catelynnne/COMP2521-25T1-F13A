@@ -22,14 +22,24 @@ void bstFree(struct node *t) {
  * Counts the total number of nodes in a given tree.
  */
 int bstNumNodes(struct node *t) {
-    return 0;
+    if (t == NULL) {
+        return 0;
+    }
+
+    return bstNumNodes(t->left) + bstNumNodes(t->right) + 1;
 } 
 
 /**
  * Returns the number of odd values in the given tree.
  */
 int bstCountOdds(struct node *t) {
-    return 0;
+    if (t == NULL) {
+        return 0;
+    }
+
+    if (t->value % 2 == 1) {
+        //
+    }
 }
 
 /**
@@ -42,10 +52,23 @@ int bstCountInternal(struct node *t) {
 }
 
 /**
- * Returns the height of the tree.
+ * Returns the height of the tree. Height = maximum number of nodes in a path on the tree. Returns -1 for an empty tree
  */
 int bstHeight(struct node *t) {
-    return 0;
+    if (t == NULL) {
+        return -1;
+    } else {
+        // 10
+        int lh = bstHeight(t->left); // 3
+        int rh = bstHeight(t->right); // 1
+
+        if (lh > rh) {
+            return lh + 1;
+        } else {
+            return rh + 1;
+        }
+    }
+
 }
 
 /**
@@ -63,3 +86,7 @@ int bstNodeLevel(struct node *t, int key) {
 int bstCountGreater(struct node *t, int key) {
     return 0;
 }
+
+
+
+
